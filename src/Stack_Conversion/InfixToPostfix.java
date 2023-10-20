@@ -41,8 +41,9 @@ public class InfixToPostfix {
     private static int precedence(char i) {
 
         if (i == '(' || i == ')') return 1;
-        else if (i == '-' || i == '+') return 2;
-        else if (i == '*' || i == '/') return 3;
+        else if (i == '^' || i == '√') return 2;
+        else if (i == '-' || i == '+') return 3;
+        else if (i == '*' || i == '/') return 4;
         else return 0;
     }
 }
